@@ -1,0 +1,67 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1080px) and (orientation: portrait){
+    .main {
+        background-color: red;
+    }
+    html {
+        font-size: 24px;
+    }
+    #messages li {
+        font-size: 1rem;
+    }
+}
+
+@media (30em <= width <= 50em ) {
+    .main {
+        background-color: aqua;
+    }
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    overflow-y: auto;
+}
+#messages li {
+    padding: 5px 10px;
+    word-break:break-all;
+    word-wrap : break-word;
+}
+#messages li:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+#chat-form {
+    height: 15%;
+    display: flex;
+    width: 100%;
+}
+#chat-form textarea {
+
+    width: 80%;
+}
+#chat-form button[type="submit"] {
+    display: inline-block;
+    width: 20%;
+}
